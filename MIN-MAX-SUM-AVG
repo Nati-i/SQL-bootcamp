@@ -1,0 +1,20 @@
+/* Aggregate Functions
+MIN, MAX, AVG, SUM 
+These combine a bunch of rows into a single value 
+*/
+
+SELECT * FROM payment
+LIMIT 4;
+
+SELECT AVG(amount) FROM payment;
+
+SELECT ROUND(AVG(amount),2) FROM payment;
+
+SELECT MIN(amount) FROM payment;
+
+SELECT COUNT(amount) FROM payment
+WHERE amount=0.00; /* Lots of zeros */
+
+SELECT MAX(amount) FROM payment;
+
+SELECT SUM(amount) FROM payment;

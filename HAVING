@@ -1,0 +1,30 @@
+/* HAVING
+Used in conjunction with GROUP BY
+Like WHERE Statement
+
+SELECT column_1, aggregate_function(column_2)
+FROM table_name
+GROUP BY column_1
+HAVING condition;
+
+*/
+
+SELECT customer_id, SUM(amount)
+FROM payment
+GROUP BY customer_id
+HAVING SUM(amount) > 200;
+
+SELECT store_id, COUNT(customer_id)
+FROM customer
+GROUP BY store_id
+HAVING COUNT(customer_id) > 300;
+
+SELECT rating, rental_rate
+FROM film
+WHERE rating IN ('R', 'G', 'PG');
+
+SELECT rating, ROUND(AVG(rental_rate), 2)
+FROM film
+WHERE rating IN ('R', 'G', 'PG')
+GROUP BY rating
+HAVING AVG(rental_rate) < 3;

@@ -1,0 +1,15 @@
+* -> All
+
+SELECT DISTINCT:
+
+SELECT DISTINCT release_year FROM film;
+Returns all the distinct elements of the data
+
+
+WHERE:
+
+SELECT column_1, column_2
+FROM table_name
+WHERE conditions;
+
+conditions -> boolean operators
