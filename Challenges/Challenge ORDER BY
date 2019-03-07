@@ -1,0 +1,23 @@
+/* Get customer ID for top 10 highest payment amounts */
+
+SELECT * FROM payment
+LIMIT 2;
+
+SELECT customer_id, amount FROM payment
+ORDER BY amount DESC
+LIMIT 10;
+
+/* This would work without amount in SELECT but only in postgreSQL */
+
+/* Challenge 2 */
+
+SELECT * FROM film
+LIMIT 2;
+
+SELECT film_id, title FROM film
+WHERE film_id >= 1 AND film_id <= 5;
+
+/* Or */
+SELECT film_id, title FROM film
+ORDER BY film_id
+LIMIT 5;

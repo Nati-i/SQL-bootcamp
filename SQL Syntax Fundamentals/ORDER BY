@@ -1,0 +1,12 @@
+/* Sort rows returned from SELECT statement */
+
+SELECT first_name, last_name FROM customer
+ORDER BY first_name ASC; /* Alphabetical order */
+
+/* First order by first name then order by last name */
+SELECT first_name, last_name FROM customer
+ORDER BY first_name ASC,
+last_name ASC; /* Helpful when people have the same first name */
+
+SELECT first_name FROM customer
+ORDER BY last_name; /* May not be allowed in other SQL languages */

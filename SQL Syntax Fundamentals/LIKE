@@ -1,0 +1,34 @@
+/* LIKE is some kind of approximation function
+WHERE first_name LIKE 'Jen%' This returns names that start
+with 'Jen' followed by other characters (patter matching)
+-  % any sequence of characters
+-  _ any single character
+Also NOT LIKE
+Case sensetive
+
+ILIKE - Then its case insensetive
+*/
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Jen%';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '%y'; /* ALl names ending with y */
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '%er%'; /* Names containing 'er' */
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE 'Jo_l';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name LIKE '_her%';
+
+SELECT first_name, last_name
+FROM customer
+WHERE first_name ILIKE 'baR%%';
