@@ -1,0 +1,5 @@
+/* LIMIT allows you to limit the number of rows returned 
+just like df.head() */
+
+SELECT * FROM customer
+LIMIT 5;

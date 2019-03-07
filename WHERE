@@ -1,0 +1,29 @@
+SELECT * FROM customer
+WHERE first_name = 'Jared';
+
+SELECT * FROM payment
+WHERE amount = 7.99;
+
+SELECT * FROM payment
+WHERE amount != 5;
+
+SELECT * FROM payment
+WHERE amount = 4.99 OR amount = 1.99;
+
+SELECT * FROM customer
+WHERE store_id = 1 AND address_id > 5;
+
+/* Challenge */
+
+SELECT email FROM customer
+WHERE first_name = 'Nancy' 
+AND last_name = 'Thomas';
+
+/* Challenge 2 */
+
+SELECT description FROM film
+WHERE title = 'Outlaw Hanky';
+
+/* Challenge 3 */
+SELECT phone FROM address
+WHERE address = '259 Ipoh Drive';

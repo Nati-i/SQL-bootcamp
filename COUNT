@@ -1,0 +1,9 @@
+/* The COUNT function returns the number
+of input rows that match a specific condtition of
+query */
+
+/* Number of transactions */
+SELECT COUNT (*) FROM payment; /* returns the number of rows */
+
+/* Number of distinct numeric amounts */
+SELECT COUNT(DISTINCT amount) FROM payment;
